@@ -1,0 +1,61 @@
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+}
+
+nav#main-nav ul{
+   float: right;
+}
+nav#main-nav{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    background-color: #ffffff;
+}
+
+nav#main-nav ul li {
+    display: inline-block;
+    height: 100%;
+    padding: 5px;
+}
+
+.clear {
+    clear:both;
+}
+
+.home-bg{
+    background: url(img/homeBg.jpg) center no-repeat fixed;
+    margin-top: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.speakers-bg{
+    background-color: #2b542c;
+    width: 100%;
+    height: 100%;
+}
+
+.about-us-bg{
+    background-color: #269abc;
+    width: 100%;
+    height: 100%;
+}
+
+.sponsors-bg{
+    background-color: #c7254e;
+    width: 100%;
+    height: 100%;
+}
+
+
+.cover-bg{
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
