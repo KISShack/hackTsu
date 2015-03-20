@@ -5,9 +5,10 @@
     <title>HackTsu</title>
 
     <!-- import bootstrap-->
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
 
+    <meta name="viewport" content="width=device-width, inititial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
     <!-- import myStyles -->
     <link href="css/styles.css" rel="stylesheet">
 
@@ -38,15 +39,8 @@
                     <span>Sponsors</span>
                 </a>
             </li>
-            <li>
-                <a href="registration.html">
-                    <span>Registration</span>
-                </a>
-            </li>
-            <li>
-                <a href="agenda.html">
-                    <span>Agenda</span>
-                </a>
+            <li><a href="#registration" data-toggle="modal">Registartion</a> </li>
+            <li><a href="agenda.html"><span>Agenda</span></a>
             </li>
         </ul>
     </nav>
@@ -77,6 +71,57 @@
 
     </div>
 
+    <!-- Registration -->
+    <div class="modal fade" id = "registration" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <form class="form-horizontal">
+                    <div class="modal-header">
+                        <h4>Contact</h4>
+                    </div>
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <lable for = "contact-email" class="col-lg-2 control-label">Email:</lable>
+                            <div class="col-lg-10">
+                                <input type="email" class="form-control" id="user-email" placeholder="Email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <lable for = "contact-name" class="col-lg-2 control-label">Name:</lable>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-name" placeholder="Full name">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <lable for = "contact-surname" class="col-lg-2 control-label">ID:</lable>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-id" placeholder="ID">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <lable for = "contact-surname" class="col-lg-2 control-label">Skill:</lable>
+                            <div class="col-lg-10">
+                                <input type="text" class="form-control" id="user-skill" placeholder="Skiil">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <lable for = "contact-msg" class="col-lg-2 control-label">About You:</lable>
+                            <div class="col-lg-10">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                        <button class=" btn btn-primary" type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
     <!-- footer -->
     <footer>
         <p>footer</p>
@@ -86,7 +131,7 @@
     <!-- import hs files-->
     <script src="js/hackTsu.js"></script>
     <script src="js/jquery.easing.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
 </html>
