@@ -27,7 +27,12 @@ nav#main-nav ul li {
     clear:both;
 }
 
-.home-bg{
+.active{
+    background-color: #204d74;
+    color: #286090;
+}
+
+.home{
     background: url(img/homeBg.jpg) center no-repeat fixed;
     margin-top: 30px;
     width: 100%;
@@ -75,5 +80,3 @@ nav#main-nav ul li {
     width: 250px;
     height: auto;
 }
-
-
