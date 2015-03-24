@@ -10,12 +10,14 @@ $(document).ready(function() {
     });
 
     $(function () {
-        $('#main-nav a').bind('click', function (event) {
-            var $navtab = $('.tab-attr');
-            if($navtab.hasClass('active')) {
-                $navtab.removeClass('active')
+        $('.speaker').hover(
+            function(){
+                $(this).addClass('speaker-over');
+            },
+            function(){
+                $(this).removeClass('speaker-over');
             }
-            $(this).addClass('active');
-        });
+        );
     });
+
 });
