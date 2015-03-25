@@ -20,4 +20,15 @@ $(document).ready(function() {
         );
     });
 
+    $(function(){
+        $('nav#main-nav a').hover(
+            function(){
+                $(this).addClass('nav-item-hover');
+            },
+            function(){
+                $(this).removeClass('nav-item-hover');
+            }
+        );
+    });
+
 });

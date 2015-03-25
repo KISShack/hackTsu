@@ -7,7 +7,8 @@ body{
 }
 
 nav#main-nav ul{
-   float: right;
+    float: right;
+    padding-right: 10px;
 }
 nav#main-nav{
     position: fixed;
@@ -20,7 +21,7 @@ nav#main-nav{
 nav#main-nav ul li {
     display: inline-block;
     height: 100%;
-    padding: 5px;
+    padding: 10px;
 }
 
 .clear {
@@ -88,4 +89,12 @@ nav#main-nav ul li {
 
 .speaker-over{
     background-color: #286090;
+}
+
+.nav-item-hover{
+    background-color: #c7254e;
+}
+
+.nav-item-active{
+    background-color: #c0a16b;
 }
