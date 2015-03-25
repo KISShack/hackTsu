@@ -1,4 +1,8 @@
-
+section
+{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 table.calendar
 {
     margin-bottom:0px;
@@ -10,7 +14,7 @@ table.calendar > thead > tr > th {
 }
 
 table.calendar > tbody > tr > td {
-    height: 20px;
+    height: 40px;
 }
 
 table.calendar > tbody > tr > td > div {
@@ -30,10 +34,27 @@ table.calendar > tbody > tr > td.has-events {
 }
 
 table.calendar > tbody > tr > td.has-events > div {
-    background-color: #08C;
+    width: 99%;
+    height: 100%;
     border-left: 1px solid white;
 }
-
+table.calendar > tbody > tr > td.snack-time{
+    color: white;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 4px;
+}
+table.calendar > tbody > tr > td.snack-time > div {
+    width: 99%;
+    height: 100%;
+    border-right: 3px solid #222222;
+    border-bottom: 1px solid white;
+}
+table.calendar > tbody > tr > td.snack-time > div > img {
+    width: 350px;
+    height: 80px;
+    border-bottom: 1px solid white;
+}
 table.calendar > tbody > tr > td.has-events > div:first-child {
     border-left: 0;
     margin-left: 1px;
@@ -69,4 +90,32 @@ table.table-borderless > thead > tr > th, table.table-borderless > tbody > tr > 
 .table tbody tr.hover td, .table tbody tr.hover th
 {
     background-color: whiteSmoke;
+}
+.registration
+{
+    width: 99%;
+    height: 100%;
+    background-color: #398439;
+    border-right: 2px solid #1d9b6c;
+}
+.preparing
+{
+    width: 99%;
+    height: 100%;
+    background-color: #286090;
+    border-right: 2px solid #31b0d5;
+}
+.speaker
+{
+    width: 99%;
+    height: 100%;
+    background-color: #ac2925;
+    border-right: 2px solid #c0a16b;
+}
+.hacking
+{
+    width: 99%;
+    height: 100%;
+    background-color: #42dca3;
+    border-right: 2px solid #1d9b6c;
 }
