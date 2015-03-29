@@ -98,4 +98,20 @@ nav#main-nav ul li {
 .nav-item-active{
     background-color: #c0a16b;
 }
+.circle{
+    margin-top: 30px;
+    display:none
+    /*background-color: #1d9b6c;*/
+    -moz-box-shadow: 0px 0px 1113px #ccc;
+    -webkit-box-shadow: 0px 0px 1113px #ccc;
+    box-shadow: 0px 0px 1113px #ccc;
 
+
+
+
+    width:400px;
+    height:400px;
+    position: absolute;
+    border-radius: 50%;
+
+}

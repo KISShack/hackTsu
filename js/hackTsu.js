@@ -13,6 +13,7 @@ $(document).ready(function() {
         $('.speaker').hover(
             function(){
                 $(this).addClass('speaker-over');
+
             },
             function(){
                 $(this).removeClass('speaker-over');
@@ -30,5 +31,23 @@ $(document).ready(function() {
             }
         );
     });
+    var mouseX;
+    var mouseY;
+    $(document).mousemove( function(e) {
+        mouseX = e.pageX;
+        mouseY = e.pageY;
+       //$('.circle').animate({top:mouseY,left:mouseX},1);
+    });
+    $(".home").mousemove(function(){
+        console.log(mouseY,mouseX)
+        $('.circle').css({top:mouseY,left:mouseX});
+    });
+    $('.home').mouseout(function(){
+        $('.circle').fadeOut("slow");
+    })
+    $('.home').hover(function(){
+        $('.circle').fadeIn("slow");
+    })
+
 
 });
