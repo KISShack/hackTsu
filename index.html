@@ -7,7 +7,6 @@
     <!-- import bootstrap-->
     <meta name="viewport" content="width=device-width, inititial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
 
     <!-- import myStyles -->
     <link href="css/styles.css" rel="stylesheet">
@@ -15,150 +14,157 @@
 
 <body>
 
-    <!-- navigation -->
-    <nav id="main-nav">
-        <a class="page-scroll tab" href="#home">
-            <span>hack</span>
-            <span>TSU</span>
-        </a>
-        <ul>
-            <li>
-                <a class="page-scroll" href="#speakers">
-                    <span>Speakers</span>
-                </a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#aboutUs">
-                    <span>About Us</span>
-                </a>
-            </li>
-            <li>
-                <a class="page-scroll" href="#sponsors">
-                    <span>Sponsors</span>
-                </a>
-            </li>
-            <li>
-                <a href="#registration" data-toggle="modal">Registartion</a>
-            </li>
-            <li>
-                <a href="agenda.html">
-                    <span>Agenda</span>
-                </a>
-            </li>
-        </ul>
-    </nav>
+<!-- navigation -->
+<nav id="main-nav" role="navigation">
+    <a class="page-scroll tab" href="#home">
+        <img class="home-image" src="css/img/1.jpg">
+    </a>
+    <ul class="unstyled list-hover-slide">
+        <li>
+            <a class="page-scroll" href="#speakers">
+                <span>Speakers</span>
+            </a>
+        </li>
+        <li>
+            <a class="page-scroll" href="#aboutUs">
+                <span>About Us</span>
+            </a>
+        </li>
+        <li>
+            <a class="page-scroll" href="#sponsors">
+                <span>Sponsors</span>
+            </a>
+        </li>
+        <li>
+            <a href="#registration" data-toggle="modal">Registartion</a>
+        </li>
+        <li>
+            <a href="agenda.html">
+                <span>Agenda</span>
+            </a>
+        </li>
+    </ul>
+</nav>
 
-    <div class="clear"></div>
+<div class="clear"></div>
 
-    <!-- Home -->
+<!-- Home -->
 
-    <div id="home" class="home cover-bg">
-       <div class="circle">
+<div id="home" class="home cover-bg">
+    <div class="circle">
+    </div>
+</div>
+
+<!-- Speakers-->
+<div id="speakers" class="speakers-bg">
+    <div class="speakers">
+        <section class="speaker">
+            <img src="css/img/speaker1.jpg" class="speaker-image">
+
+            <h3>name surname</h3>
+            <h4>@work</h4>
+            <nav></nav>
+        </section>
+
+        <section class="speaker">
+            <img src="css/img/speaker2.jpg" class="speaker-image">
+
+            <h3>name surname</h3>
+            <h4>@work</h4>
+            <nav></nav>
+        </section>
+
+        <section class="speaker">
+            <img src="css/img/speaker3.png" class="speaker-image">
+
+            <h3>name surname</h3>
+            <h4>@work</h4>
+            <nav></nav>
+        </section>
+    </div>
+</div>
+
+<!-- About Us-->
+<div id="aboutUs" class="about-us-bg cover-bg">
+    <p>ჩვენ ვართ ბლა ბლა</p>
+
+    <p>ჩვენ ვართ ბლა ბლა</p>
+
+    <p>ჩვენ ვართ ბლა ბლა</p>
+
+    <p>ჩვენ ვართ ბლა ბლა</p>
+
+    <p>ჩვენ ვართ ბლა ბლა</p>
+</div>
+
+<!-- Sponsors -->
+<div id="sponsors" class="sponsors-bg cover-bg">
+
+</div>
+
+<!-- Registration -->
+<div class="modal fade" id="registration" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <form class="form-horizontal">
+                <div class="modal-header">
+                    <h4>Contact</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="form-group">
+                        <lable for="contact-email" class="col-lg-2 control-label">Email:</lable>
+                        <div class="col-lg-10">
+                            <input type="email" class="form-control" id="user-email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <lable for="contact-name" class="col-lg-2 control-label">Name:</lable>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="user-name" placeholder="Full name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <lable for="contact-surname" class="col-lg-2 control-label">ID:</lable>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="user-id" placeholder="ID">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <lable for="contact-surname" class="col-lg-2 control-label">Skill:</lable>
+                        <div class="col-lg-10">
+                            <input type="text" class="form-control" id="user-skill" placeholder="Skiil">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <lable for="contact-msg" class="col-lg-2 control-label">About You:</lable>
+                        <div class="col-lg-10">
+                            <textarea class="form-control" rows="3"></textarea>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer">
+                    <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
+                    <button class=" btn btn-primary" type="submit">Submit</button>
+                </div>
+            </form>
         </div>
     </div>
+</div>
 
-    <!-- Speakers-->
-    <div id="speakers" class="speakers-bg">
-        <div class="speakers">
-            <section class="speaker">
-                <img src="css/img/speaker1.jpg" class="speaker-image">
-                <h3>name surname</h3>
-                <h4>@work</h4>
-                <nav></nav>
-            </section>
+<!-- footer -->
+<footer>
+    <p>footer</p>
 
-            <section class="speaker">
-                <img src="css/img/speaker2.jpg" class="speaker-image">
-                <h3>name surname</h3>
-                <h4>@work</h4>
-                <nav></nav>
-            </section>
+    <p>footer</p>
+</footer>
 
-            <section class="speaker">
-                <img src="css/img/speaker3.png" class="speaker-image">
-                <h3>name surname</h3>
-                <h4>@work</h4>
-                <nav></nav>
-            </section>
-         </div>
-    </div>
-
-    <!-- About Us-->
-    <div id="aboutUs" class="about-us-bg cover-bg">
-        <p>ჩვენ ვართ ბლა ბლა</p>
-        <p>ჩვენ ვართ ბლა ბლა</p>
-        <p>ჩვენ ვართ ბლა ბლა</p>
-        <p>ჩვენ ვართ ბლა ბლა</p>
-        <p>ჩვენ ვართ ბლა ბლა</p>
-    </div>
-
-    <!-- Sponsors -->
-    <div id="sponsors" class="sponsors-bg cover-bg">
-
-    </div>
-
-    <!-- Registration -->
-    <div class="modal fade" id = "registration" role="dialog">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <form class="form-horizontal">
-                    <div class="modal-header">
-                        <h4>Contact</h4>
-                    </div>
-                    <div class="modal-body">
-                        <div class="form-group">
-                            <lable for = "contact-email" class="col-lg-2 control-label">Email:</lable>
-                            <div class="col-lg-10">
-                                <input type="email" class="form-control" id="user-email" placeholder="Email">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <lable for = "contact-name" class="col-lg-2 control-label">Name:</lable>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="user-name" placeholder="Full name">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <lable for = "contact-surname" class="col-lg-2 control-label">ID:</lable>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="user-id" placeholder="ID">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <lable for = "contact-surname" class="col-lg-2 control-label">Skill:</lable>
-                            <div class="col-lg-10">
-                                <input type="text" class="form-control" id="user-skill" placeholder="Skiil">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <lable for = "contact-msg" class="col-lg-2 control-label">About You:</lable>
-                            <div class="col-lg-10">
-                                <textarea class="form-control" rows="3"></textarea>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="modal-footer">
-                        <a href="#" class="btn btn-default" data-dismiss="modal">Close</a>
-                        <button class=" btn btn-primary" type="submit">Submit</button>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <!-- footer -->
-    <footer>
-        <p>footer</p>
-        <p>footer</p>
-    </footer>
-
-    <!-- import js files-->
-    <script src="js/jquery.js"></script>
-    <script src="js/js/bootstrap.min.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/hackTsu.js"></script>
-    <script src="js/Vague.js" type="text/javascript"></script>
+<!-- import js files-->
+<script src="js/jquery.js"></script>
+<script src="js/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/hackTsu.js"></script>
+<script src="js/Vague.js" type="text/javascript"></script>
 </body>
 </html>

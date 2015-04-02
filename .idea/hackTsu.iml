@@ -8,5 +8,7 @@
     <orderEntry type="library" name="canvasjs-DefinitelyTyped" level="application" />
     <orderEntry type="library" name="jQuery-2.0.0" level="application" />
     <orderEntry type="library" name="jquery.blockUI-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="jasmine-jquery-DefinitelyTyped" level="application" />
+    <orderEntry type="library" name="gulp-sass-DefinitelyTyped" level="application" />
   </component>
 </module>

@@ -1,16 +1,18 @@
-html{
+html {
     height: 100%;
 }
 
-body{
+body {
     height: 100%;
+    font-family: "Lora", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-nav#main-nav ul{
+nav#main-nav ul {
     float: right;
     padding-right: 10px;
 }
-nav#main-nav{
+
+nav#main-nav {
     position: fixed;
     top: 0px;
     left: 0px;
@@ -18,100 +20,186 @@ nav#main-nav{
     background-color: #ffffff;
 }
 
+.home-image {
+   padding: 10px;
+    width: 150px;
+    height: auto;
+}
+
 nav#main-nav ul li {
     display: inline-block;
     height: 100%;
-    padding: 10px;
+    padding-left: 15px;
+}
+nav#main-nav a
+{
+    text-decoration: none;
+    font-family:"Comic Sans MS", cursive, sans-serif;
 }
 
 .clear {
-    clear:both;
+    clear: both;
 }
 
-.active{
+.active {
     background-color: #204d74;
     color: #286090;
 }
 
-.home{
+.home {
     background: url(img/homeBg.jpg) center no-repeat fixed;
     margin-top: 30px;
     width: 100%;
     height: 100%;
 }
 
-.speakers-bg{
-    background-color: #2b542c;
+.speakers-bg {
+    background-color: #81CFE0;
+    /*width: 100%;*/
+    /*height: 100%;*/
 }
 
-
-.about-us-bg{
+.about-us-bg {
     background-color: #269abc;
     width: 100%;
     height: 100%;
 }
 
-.sponsors-bg{
+.sponsors-bg {
     background-color: #c7254e;
     width: 100%;
     height: 100%;
 }
 
-.cover-bg{
+.cover-bg {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-.speakers{
+.speakers {
     max-width: 800px;
     margin: 0 auto;
     text-align: center;
 }
 
-.speaker{
+.speaker {
     display: inline-block;
     padding: 2em;
     text-align: center;
 }
 
-.speaker-image{
+.speaker-image {
     border-radius: 50%;
     width: 250px;
     height: auto;
 }
 
-#time-line
-{
+#time-line {
     padding-bottom: 100px;
 }
 
-.speaker-over{
+.speaker-over {
     background-color: #286090;
 }
 
-.nav-item-hover{
-    background-color: #c7254e;
+.nav-item-hover {
+    padding: auto;
+    /*border-bottom: 3px groove #c7254e;*/
 }
 
-.nav-item-active{
+.nav-item-active {
     background-color: #c0a16b;
 }
-.circle{
+
+.circle {
     margin-top: 30px;
-    display:none
+    display: none
     /*background-color: #1d9b6c;*/
-    -moz-box-shadow: 0px 0px 1113px #ccc;
+-moz-box-shadow : 0 px 0 px 1113 px #ccc;
     -webkit-box-shadow: 0px 0px 1113px #ccc;
     box-shadow: 0px 0px 1113px #ccc;
 
-
-
-
-    width:400px;
-    height:400px;
+    width: 400px;
+    height: 400px;
     position: absolute;
     border-radius: 50%;
 
+}
+
+.speaker img {
+    -webkit-transition: all 1s ease; /* Safari and Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* IE 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+}
+
+.speaker img:hover {
+    -webkit-transform: scale(1.2); /* Safari and Chrome */
+    -moz-transform: scale(1.2); /* Firefox */
+    -ms-transform: scale(1.2); /* IE 9 */
+    -o-transform: scale(1.2); /* Opera */
+    transform: scale(1.2);
+}
+
+
+
+*, :before, :after {
+    box-sizing: border-box;
+}
+
+.unstyled {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.unstyled a {
+    text-decoration: none;
+}
+
+.list-inline {
+    overflow: hidden;
+}
+.list-inline li {
+    float: left;
+}
+
+#main-nav a {
+    padding: 1.1em 0;
+    color: #DFDBD9;
+    font: 400 1.125em "Source Sans Pro", Helvetica, Arial, sans-serif;
+    text-align: center;
+    text-transform: lowercase;
+}
+#main-nav a:hover {
+    color: #fff;
+}
+
+.list-hover-slide li {
+    position: relative;
+    overflow: hidden;
+}
+.list-hover-slide a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    transition: .35s ease color;
+}
+.list-hover-slide a:before {
+    content: '';
+    display: block;
+    z-index: -1;
+    position: absolute;
+    top: -150%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 5px #DF4500;
+    background: #3C3735;
+    transition: .35s ease top;
+}
+.list-hover-slide a.is-current:before, .list-hover-slide a:hover:before {
+    top: 0;
 }

@@ -1,11 +1,10 @@
-section
-{
+section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
-table.calendar
-{
-    margin-bottom:0px;
+
+table.calendar {
+    margin-bottom: 0px;
     text-align: center;
 }
 
@@ -18,7 +17,7 @@ table.calendar > tbody > tr > td {
 }
 
 table.calendar > tbody > tr > td > div {
-//padding: 8px;
+/ / padding : 8 px;
     height: 40px;
     overflow: hidden;
     display: inline-block;
@@ -38,23 +37,27 @@ table.calendar > tbody > tr > td.has-events > div {
     height: 100%;
     border-left: 1px solid white;
 }
-table.calendar > tbody > tr > td.snack-time{
+
+table.calendar > tbody > tr > td.snack-time {
     color: white;
     cursor: pointer;
     padding: 0;
     border-radius: 4px;
 }
+
 table.calendar > tbody > tr > td.snack-time > div {
     width: 99%;
     height: 100%;
     border-right: 3px solid #222222;
     border-bottom: 1px solid white;
 }
+
 table.calendar > tbody > tr > td.snack-time > div > img {
     width: 350px;
     height: 80px;
     border-bottom: 1px solid white;
 }
+
 table.calendar > tbody > tr > td.has-events > div:first-child {
     border-left: 0;
     margin-left: 1px;
@@ -63,9 +66,11 @@ table.calendar > tbody > tr > td.has-events > div:first-child {
 table.calendar > tbody > tr > td.has-events > div.practice {
     opacity: 0.7;
 }
+
 table.calendar > tbody > tr > td.conflicts > div > span.title {
-//color: red;
+/ / color : red;
 }
+
 table.calendar > tbody > tr > td.max-conflicts > div {
     background-color: red;
     color: white;
@@ -75,6 +80,7 @@ table.calendar > tbody > tr > td.has-events > div > span {
     display: block;
     text-align: center;
 }
+
 table.calendar > tbody > tr > td.has-events > div > span a {
     color: white;
 }
@@ -87,40 +93,40 @@ table.table-borderless > thead > tr > th, table.table-borderless > tbody > tr > 
     border: 0;
 }
 
-.table tbody tr.hover td, .table tbody tr.hover th
-{
+.table tbody tr.hover td, .table tbody tr.hover th {
     background-color: whiteSmoke;
 }
-.registration
-{
+
+.registration {
     width: 99%;
     height: 100%;
     background-color: #398439;
     border-right: 2px solid #1d9b6c;
 }
-.preparing
-{
+
+.preparing {
     width: 99%;
     height: 100%;
     background-color: #286090;
     border-right: 2px solid #31b0d5;
 }
-.agenda-speaker
-{
+
+.agenda-speaker {
     width: 99%;
     height: 100%;
     background-color: #ac2925;
     border-right: 2px solid #c0a16b;
 }
-.hacking
-{
+
+.hacking {
     width: 99%;
     height: 100%;
     background-color: #42dca3;
     border-right: 2px solid #1d9b6c;
 }
-.addborder
-{
-    border-right: 5px solid #000000;
-    border-bottom: 5px solid #000000;
+
+.addborder {
+    border-right: 5px solid #333333;
+    border-bottom: 5px solid #333333;
+    opacity: 1;
 }
