@@ -31,23 +31,22 @@ $(document).ready(function () {
             }
         );
     });
-   /* var mouseX;
+    var mouseX;
     var mouseY;
+    var $homeunblur = $('.home-unblur');
     $(document).mousemove(function (e) {
         mouseX = e.pageX;
         mouseY = e.pageY;
-        //$('.circle').animate({top:mouseY,left:mouseX},1);
     });
-    $(".home").mousemove(function () {
-        console.log(mouseY, mouseX)
-        $('.circle').css({top: mouseY, left: mouseX});
+    $(".home-blur").mousemove(function () {
+        $homeunblur.css({top: (mouseY - ($homeunblur.height() / 2)), left: ( mouseX-($homeunblur.width() / 2))});
     });
-    $('.home').mouseout(function () {
-        $('.circle').fadeOut("slow");
+    $('.home-blur').mouseout(function () {
+        $('#mask').fadeOut("slow");
     })
-    $('.home').hover(function () {
-        $('.circle').fadeIn("slow");
-    })*/
+    $('.home-blur').hover(function () {
+        $('svg').fadeIn("slow");
+    })
 
 
 });
