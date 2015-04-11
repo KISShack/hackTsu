@@ -49,15 +49,14 @@
     </ul>
 </nav>
 
-<div class="clear"></div>
 
 <!-- Home -->
 <div id="home" class="home cover-bg">
     <script type="text/javascript">
         imageZoom(
                 {blur: true, inner: false, tint: false},
-                {src: "css/img/homeBg.jpg", height: 4320, width: 7680},
-                {src: "css/img/homeBg.jpg", height: 1080, width: 1920}
+                {src: "css/img/homeBg.jpg", height:(screen.height*8), width:(screen.width*8)},
+                {src: "css/img/homeBg.jpg", height:screen.height, width:screen.width}
         );
     </script>
 </div>
