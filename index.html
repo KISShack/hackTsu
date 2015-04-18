@@ -11,26 +11,25 @@
     <!-- import myStyles -->
     <link href="css/styles.css" rel="stylesheet">
     <script src="js/jquery.js" type="text/javascript"></script>
-    <script src="js/image-zoom.js" type="text/javascript"></script>
-    <link href="css/image-zoom.css" media="screen" rel="stylesheet" type="text/css"/>
+    <!--<script src="js/image-zoom.js" type="text/javascript"></script>-->
+    <!--<link href="css/image-zoom.css" media="screen" rel="stylesheet" type="text/css"/>-->
 </head>
 
 <body>
-
-<!-- navigation -->
+<!--navigation-->
 <nav id="main-nav" role="navigation">
     <a class="page-scroll tab" href="#home">
         <img class="home-image" src="css/img/1.jpg">
     </a>
-    <ul class="unstyled list-hover-slide">
+    <ul class="list-hover-slide">
         <li>
-            <a class="page-scroll" href="#speakers">
-                <span>Speakers</span>
+            <a class="page-scroll" href="#aboutUs">
+                <span>Questions</span>
             </a>
         </li>
         <li>
-            <a class="page-scroll" href="#aboutUs">
-                <span>About Us</span>
+            <a class="page-scroll" href="#speakers">
+                <span>Speakers</span>
             </a>
         </li>
         <li>
@@ -50,57 +49,114 @@
 </nav>
 
 
-<!-- Home -->
-<div id="home" class="home cover-bg">
-    <script type="text/javascript">
-        imageZoom(
-                {blur: true, inner: false, tint: false},
-                {src: "css/img/homeBg.jpg", height:(screen.height*8), width:(screen.width*8)},
-                {src: "css/img/homeBg.jpg", height:screen.height, width:screen.width}
-        );
-    </script>
+<!--Home-->
+<div id="home" class="home-blur cover-bg"></div>
+<!--//HOME-END-->
+
+<!--About Us-->
+<div id="aboutUs" class="about-us-bg cover-bg">
+    <div class="faq-content">
+        <article>
+            <h3 id="ra-aris-hak-atoni-">რა არის ჰაკათონი?</h3>
+
+            <p>ჰაკათონი არის მარათონი, სადაც მონაწილეები მოკლე დროში მუშაობენ ახალ იდეებზე, ტექნოლოგიებზე და უბრალოდ
+                ატარებენ კარგ დროს. უფრო დაწვრილებით ჰაკათონის შესახებ, იხილეთ
+                <a href="http://goo.gl/AI8s3v">ეს პოსტი</a>.</p>
+
+            <h3 id="vis-sheudzlia-monats-ileobis-migheba-">ვის შეუძლია მონაწილეობის მიღება?</h3>
+
+            <p>ჰაკათონში მონაწილეობის მიღება შეუძლია ყველას, ვინც არის აქტიური სტუდენტი (ბაკალავრის და მაგისტრის) და
+                სკოლის
+                მოსწავლე.</p>
+
+            <h3 id="vin-ighebs-monats-ileobas-hak-atonshi-">ვინ იღებს მონაწილეობას ჰაკათონში?</h3>
+
+            <p>ჰაკათონში, გარდა მოსწავლეებისა და სტუდენტებისა მთელი საქართველოდან, მონაწილეობას მიიღებენ გუნდები
+                უკრაინის,
+                თურქეთის, სომხეთისა და აზერბაიჯანის უნივერსიტეტებიდან.</p>
+
+            <h3 id="ra-vkna-tu-ar-mqavs-gundi-an-ar-makvs-idea-">რა ვქნა თუ არ მყავს გუნდი ან არ მაქვს იდეა?</h3>
+
+            <p>ეს სულაც არ ნიშნავს, რომ ჰაკათონზე არ უნდა მოხვიდეთ!
+                თავისუფლად შეგიძლიათ გამოიყენოთ <a href="http://goo.gl/3YH8Kx">hackTBILISI-ის ფეისბუქის ივენთის
+                    გვერდი</a>
+                გუნდის მოსაძებნად.<br>
+                ნუ მოგერიდებათ იმის გაზიარება, თუ როგორი ადამიანი გჭირდებათ გუნდში, ან თქვენ რა შეგიძლიათ თავად
+                შესთავაზოთ
+                გუნდს.</p>
+
+            <h3 id="ra-unda-vikonio-tan-">რა უნდა ვიქონიო თან?</h3>
+
+            <p><strong>სტუდენტებმა:</strong> სტუდენტური ბარათი და/ან პირადობის მოწმობა სტუდენტის სტატუსის აღნიშვნით.<br>
+                <strong>მოსწავლეებმა:</strong> მოსწავლის სტატუსის დამადასტურებელი დოკუმენტი. <br>
+                <strong>ყველა მონაწილე:</strong> საკუთარი ლეპტოპი, დამტენი, რუბიკის კუბი, პირადი ჰიგიენის საგნები და
+                ყველაფერი, რაც 3 დღის განმავლობაში დაგჭირდებათ.</p>
+
+            <h3 id="da-rom-ar-var-develop-eri-">და რომ არ ვარ დეველოპერი?</h3>
+
+            <p>ჰაკათონები არ არის მხოლოდ დეველოპერებისთვის - ჰაკათონები არის ყველასთვის! ხარ დიზაინერი, ხარ ინჟინერი,
+                ხარ
+                ნებისმიერი სფეროს წარმომადგენელი და გაქვს იდეა, ან არ გაქვს და თვლი რომ შენი ადგილი ჰაკათონზეა ? - მაშინ
+                მოდი, რადგან hackTBILISI-ის კარი ყველასთვის ღიაა.</p>
+
+            <h3 id="ramdeni-ts-evri-sheidzleba-iqos-gundshi-">რამდენი წევრი შეიძლება იყოს გუნდში?</h3>
+
+            <p>გუნდში წევრების რაოდენობა არ უნდა აღემატებოდეს ოთხს. <br>
+                ინდივიდუალურადაც შეგიძლიათ მონაწილეობის მიღება, თუმცა გვერწმუნეთ, გუნდთან ერთად მუშაობის სიამოვნებას
+                არაფერი
+                შეედრება. </p>
+
+            <h3 id="rodis-its-qeba-hacktbilisi-">როდის იწყება hackTBILISI?</h3>
+
+            <p>ჰაკათონი დაიწყება პარასკევს, 19 დეკემბერს, 20 საათზე და დასრულდება კვირას, 21 დეკემბერს, 16 საათზე.
+                მონაწილეების ადგილზე რეგისტრაცია დაიწყება 17:00 საათიდან, 19:00 საათზე დაიწყება გახსნის ცერემონია, ხოლო
+                20:00 საათიდან კი მონაწილეებს შეეძლებათ მუშაობის დაწყება. </p>
+
+            <h3 id="hak-atonshi-monats-ileoba-upasoa-">ჰაკათონში მონაწილეობა უფასოა?</h3>
+
+            <p>რა თქმა უნდა. ასევე, 3 დღის განმავლობაში უზრუნველყოფილი იქნება უფასო კვებაც.</p>
+
+            <h3 id="vinaa-organizat-ori-da-sad-t-ardeba-">ვინაა ორგანიზატორი და სად ტარდება?</h3>
+
+            <p>hackTBILISI-ის ორგანიზატორია ორგანიზაცია UniHack და თავისუფალი უნივერსიტეტი. ჰაკათონი ტარდება კახა
+                ბენდუქიძის
+                საუნივერსიტეტო კამპუსში.</p>
+        </article>
+    </div>
 </div>
 <!-- Speakers-->
 <div id="speakers" class="speakers-bg">
     <div class="speakers">
         <section class="speaker">
             <img src="css/img/speaker1.jpg" class="speaker-image">
-
-            <h3>name surname</h3>
-            <h4>@work</h4>
-            <nav></nav>
+            <div class="speaker-info" style="left: -100%;">
+                <h3>name surname</h3>
+                <h4>@work</h4>
+                <nav></nav>
+            </div>
         </section>
 
         <section class="speaker">
             <img src="css/img/speaker2.jpg" class="speaker-image">
 
-            <h3>name surname</h3>
-            <h4>@work</h4>
-            <nav></nav>
+            <div class="speaker-info" style="left: -100%;">
+                <h3>name surname</h3>
+                <h4>@work</h4>
+                <nav></nav>
+            </div>
         </section>
 
         <section class="speaker">
             <img src="css/img/speaker3.png" class="speaker-image">
-
-            <h3>name surname</h3>
-            <h4>@work</h4>
-            <nav></nav>
+            <div class="speaker-info" style="left: -100%">
+                <h3>name surname</h3>
+                <h4>@work</h4>
+                <nav></nav>
+            </div>
         </section>
     </div>
 </div>
 
-<!-- About Us-->
-<div id="aboutUs" class="about-us-bg cover-bg">
-    <p>ჩვენ ვართ ბლა ბლა</p>
-
-    <p>ჩვენ ვართ ბლა ბლა</p>
-
-    <p>ჩვენ ვართ ბლა ბლა</p>
-
-    <p>ჩვენ ვართ ბლა ბლა</p>
-
-    <p>ჩვენ ვართ ბლა ბლა</p>
-</div>
 
 <!-- Sponsors -->
 <div id="sponsors" class="sponsors-bg cover-bg">
@@ -165,7 +221,7 @@
 </footer>
 
 <!-- import js files-->
-<script src="js/js/bootstrap.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.easing.min.js"></script>
 <script src="js/hackTsu.js"></script>
