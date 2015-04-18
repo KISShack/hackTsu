@@ -19,15 +19,15 @@ $(document).ready(function () {
             }
         );
     });
-    //$('#home').hover(
-    //    function(){
-    //        $(this).addClass('blur-effect');
-    //    },
-    //    function(){
-    //        $(this).removeClass('blur-effect');
-    //    }
-    //
-    //);
+    $('#home').hover(
+        function(){
+            $(this).addClass('home-blur').removeClass('home-no-blur');
+        },
+        function(){
+            $(this).removeClass('home-blur').addClass('home-no-blur');
+        }
+
+    );
     $('.speaker').hover(
         function () {
             $(this).find('.speaker-info').animate({
