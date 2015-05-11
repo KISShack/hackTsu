@@ -21,10 +21,10 @@ $(document).ready(function () {
     });
     $('#home').hover(
         function () {
-            $(this).addClass('home-blur').removeClass('home-no-blur');
+            $(this).addClass('home-no-blur').removeClass('home-blur');
         },
         function () {
-            $(this).removeClass('home-blur').addClass('home-no-blur');
+            $(this).removeClass('home-no-blur').addClass('home-blur');
         }
     );
     $('.speaker').hover(
@@ -51,51 +51,6 @@ $(document).ready(function () {
     });
 
 
-    ////GEAR EFFECT
-    var containerPos = 100
-    var scrollPos = $(window).scrollTop();
-    var degreeRotate = 0;
-
-    var gear1Rotate = 0;
-    var gear2Rotate = 0;
-    var gear3Rotate = 0;
-
-    $('#gears').css('display', 'block');
-    $('#gears').css('left', containerPos + "px");
-    browser_transform('#gear2', 11);
-    browser_transform('#gear3', 90);
-
-    $(document).scroll(function () {
-        // Are we moving up or down?
-        var newScroll = $(window).scrollTop();
-
-        if (scrollPos > newScroll) {
-            degreeRotate -= 5;
-        } else {
-            degreeRotate += 5;
-        }
-
-        // Calculate rotations. These will be slightly different for each gear, even
-        // for the ones spinning the same direction, in order to line up the teeth of
-        // the gears.
-        gear1Rotate = degreeRotate;
-        gear2Rotate = ((degreeRotate + 11) * -1);
-        gear3Rotate = ((degreeRotate + 90) * -1);
-
-        // Store the current scroll for comparison next scroll event.
-        scrollPos = newScroll;
-
-        browser_transform('#gear1', gear1Rotate);
-        browser_transform('#gear2', gear2Rotate);
-        browser_transform('#gear3', gear3Rotate);
-    });
 });
 
 
-function browser_transform(transTarget, transValue) {
-    $(transTarget).css('-ms-transform', 'rotate(' + transValue + 'deg)');
-    $(transTarget).css('-moz-transform', 'rotate(' + transValue + 'deg)');
-    $(transTarget).css('-webkit-transform', 'rotate(' + transValue + 'deg)');
-    $(transTarget).css('-o-transform', 'rotate(' + transValue + 'deg)');
-    $(transTarget).css('transform', 'rotate(' + transValue + 'deg)');
-}

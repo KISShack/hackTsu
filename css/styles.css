@@ -8,7 +8,7 @@ body {
 }
 
 nav#main-nav {
-    z-index: 4;
+    z-index: 9999;
 }
 
 nav#main-nav ul {
@@ -38,11 +38,13 @@ nav#main-nav ul li {
 
 nav#main-nav ul li a {
     text-decoration: none;
+    font-family: alk_sanetregular;
+    text-transform: uppercase;
 }
 
 nav#main-nav a {
     color: #06B7FA;
-    font-family: Arial, Helvetica, sans-serif
+
 }
 
 .nav-item-hover {
@@ -51,9 +53,9 @@ nav#main-nav a {
 }
 
 .nav-item-active {
-    -webkit-box-shadow:inset 0px -3px 0px -1px #06B7FA;
-       -moz-box-shadow:inset 0px -3px 0px -1px #06B7FA;
-            box-shadow:inset 0px -3px 0px -1px #06B7FA;
+    -webkit-box-shadow: inset 0px -3px 0px -1px #06B7FA;
+    -moz-box-shadow: inset 0px -3px 0px -1px #06B7FA;
+    box-shadow: inset 0px -3px 0px -1px #06B7FA;
     /*border-bottom:3px solid #06B7FA;*/
 }
 
@@ -90,6 +92,8 @@ nav#main-nav a {
     position: relative;
     z-index: 1;
     transition: .35s ease color;
+    font-family: alk_sanetregular;
+    text-transform: uppercase;
 }
 
 .list-hover-slide a:before {
@@ -110,16 +114,40 @@ nav#main-nav a {
     top: 0;
 }
 
+/*CANVAS*/
+#starfield {
+    background-color: #000000;
+    z-index: -1
+}
+
+#adsense {
+    position: absolute;
+    background-color: transparent;
+    display: none;
+    z-index: -1
+}
+
 /*HOME*/
 
 .home-blur {
-    background: url('img/homeBg-blur.jpg') center no-repeat fixed;
+    background: url('img/homeBg.jpg') center no-repeat fixed;
+    opacity: 0.7;
     margin-top: 50px;
     width: 100%;
     height: 100%;
+    z-index: 3;
 }
 
 .home-no-blur {
+    background: url('img/homeBg.jpg') center no-repeat fixed;
+    opacity: 0.7;
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+#demo {
     background: url('img/homeBg.jpg') center no-repeat fixed;
     margin-top: 50px;
     width: 100%;
@@ -140,7 +168,7 @@ nav#main-nav a {
 
 .speaker {
     display: inline-block;
-    padding: 2em;
+    padding: 80px 50px 50px 0px;
     text-align: center;
     /*float: left;*/
     overflow: hidden;
@@ -163,13 +191,13 @@ nav#main-nav a {
 
 .speaker-info {
     background-color: black;
-    opacity: 0.5;
+    opacity: 0.6;
     position: absolute;
     left: -200%;
     top: 0;
     width: 300px;
     height: 300px;
-    margin: 27px 0px 0px 27px;
+    /*margin: 80px 50px 50px 0px;*/
 }
 
 .speaker-info > h3 {
@@ -185,19 +213,51 @@ nav#main-nav a {
     background-color: #286090;
 }
 
+#speakers-title {
+
+}
+
+.line {
+    position: relative;
+    width: 100%;
+    border-top: 40px red solid;
+}
+
 /*ABOUT-US*/
 .about-us-bg {
-    background-color: #ffffff;
+    background-color: #4e4e4e;
     width: 100%;
     height: auto;
     opacity: 0.8;
+}
+
+.faq-content {
+    width: 1000px;
+    margin: auto;
+    opacity: 0.8;
+
+}
+
+.rectangle {
+    background-image: url("img/triangle.png");
+    width: 300px;
+    height: 300px;
+    position: relative;
+    float: right;
+}
+
+.rectangle > h2 {
+    position: relative;
+    right: -140px;
+    top: 60px;
+    color: white;
+    font-weight: 500;
 }
 
 article {
     margin: 0 auto;
     font-size: 1.6em;
     line-height: 1.3em;
-    width: 37.5em;
     color: #4d4d4d;
     text-align: justify;
 }
@@ -213,6 +273,7 @@ article p {
     margin: 0 0 3em;
     color: #06B7FA;
     text-align: center;
+    font-family: bpg_ingiri_arial_2012regular;
 
 }
 
@@ -228,10 +289,11 @@ article p {
     width: 100%;
     height: 100%;
 }
-.title
-{
+
+.title {
     padding: 60px 0px 0px 0px;
 }
+
 .title > h3 {
     margin: 0;
     text-align: center;
@@ -243,40 +305,13 @@ footer {
 }
 
 .cover-bg {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 #time-line {
     padding-bottom: 100px;
 }
 
-/*GEAR EFFECT*/
-#gears {
-    position: fixed;
-    display: none;
-    z-index: -1;
-}
-
-.gear_md {
-    position: fixed;
-    width: 145px;
-    height: 145px;
-}
-
-#gear1 {
-    top: 250px;
-    left: 25px;
-}
-
-#gear2 {
-    top: 150px;
-    left: -60px;
-}
-
-#gear3 {
-    top: 380px;
-    left: 0px;
-}

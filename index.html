@@ -5,7 +5,6 @@
     <title>HackTsu</title>
 
     <!-- import bootstrap-->
-    <meta name="viewport" content="width=device-width, inititial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- import myStyles -->
@@ -13,9 +12,12 @@
     <script src="js/jquery.js" type="text/javascript"></script>
     <!--<script src="js/image-zoom.js" type="text/javascript"></script>-->
     <!--<link href="css/image-zoom.css" media="screen" rel="stylesheet" type="text/css"/>-->
+    <script src="js/starfield.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="start()" onresize="resize()" onorientationchange="resize()"
+      onmousedown="context.fillStyle='rgba(0,0,0,'+opacity+')'" onmouseup="context.fillStyle='rgb(0,0,0)'">
+
 <!--navigation-->
 <nav id="main-nav" role="navigation">
     <a class="page-scroll tab" href="#home">
@@ -48,14 +50,21 @@
     </ul>
 </nav>
 
-
+<canvas id="starfield"></canvas>
+<div id="adsense"></div>
 <!--Home-->
-<div id="home" class="home-no-blur cover-bg"></div>
+<div id="home" class="home-blur cover-bg">
+
+</div>
 <!--//HOME-END-->
 
 <!--About Us-->
 <div id="aboutUs" class="about-us-bg cover-bg">
+    <div class="rectangle" >
+       <h2>კითხვები</h2>
+    </div>
     <div class="faq-content">
+
         <article>
             <h3 id="ra-aris-hak-atoni-">რა არის ჰაკათონი?</h3>
 
@@ -126,13 +135,14 @@
 </div>
 <!-- Speakers-->
 <div id="speakers" class="speakers-bg">
-    <div class="title">
-        <h3>სპიკერები</h3>
+    <div class="line"></div>
+    <div class="rectangle" >
+        <h2>სპიკერები</h2>
     </div>
     <div class="speakers">
         <section class="speaker">
             <img src="css/img/speaker1.jpg" class="speaker-image">
-            <div class="speaker-info" style="left: -100%;">
+            <div class="speaker-info" style="left: -200%;">
                 <h3>name surname</h3>
                 <h4>@work</h4>
                 <nav></nav>
@@ -140,6 +150,7 @@
         </section>
         <section class="speaker">
             <img src="css/img/speaker2.jpg" class="speaker-image">
+
             <div class="speaker-info" style="left: -100%;">
                 <h3>name surname</h3>
                 <h4>@work</h4>
@@ -161,23 +172,17 @@
 
 <!-- Sponsors -->
 <div id="sponsors" class="sponsors-bg cover-bg">
-    <div class="title">
-        <h3>სპონსორები</h3>
+    <div class="rectangle" >
+        <h2>სპონსორები</h2>
     </div>
     <img src="css/img/Microsoft.png" style="width: 450px;height: auto; margin-left: 20%">
+
     <div class="title">
         <h3>მეიდა პარტნიორები</h3>
     </div>
 </div>
 
 <!-- Registration -->
-<div id="gears">
-    <img class="gear_md" id="gear1" src="css/img/gear.png"/>
-
-    <img class="gear_md" id="gear2" src="css/img/gear.png"/>
-
-    <img class="gear_md" id="gear3" src="css/img/gear.png"/>
-</div>
 
 <!-- footer -->
 <footer>
