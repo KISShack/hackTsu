@@ -19,14 +19,14 @@ $(document).ready(function () {
             }
         );
     });
-    $('#home').hover(
-        function () {
-            $(this).addClass('home-no-blur').removeClass('home-blur');
-        },
-        function () {
-            $(this).removeClass('home-no-blur').addClass('home-blur');
-        }
-    );
+    //$('#home').hover(
+    //    function () {
+    //        $(this).addClass('home-no-blur').removeClass('home-blur');
+    //    },
+    //    function () {
+    //        $(this).removeClass('home-no-blur').addClass('home-blur');
+    //    }
+    //);
     $('.speaker').hover(
         function () {
             $(this).find('.speaker-info').animate({
