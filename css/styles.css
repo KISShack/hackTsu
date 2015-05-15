@@ -4,7 +4,9 @@ html {
 
 body {
     height: 100%;
-    font-family: Arial, Helvetica, sans-serif
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    overflow-x: hidden;
+    margin: auto;
 }
 
 nav#main-nav {
@@ -13,8 +15,9 @@ nav#main-nav {
 
 nav#main-nav ul {
     float: right;
+    margin: 0 0 0 -2px;
     padding-right: 10px;
-    margin-bottom: -2px;
+    /*margin-bottom: -2px;*/
 }
 
 nav#main-nav {
@@ -26,6 +29,7 @@ nav#main-nav {
 }
 
 .home-image {
+    margin-top:10px ;
     padding: 5px 5px 0px 35px;
     width: 150px;
     height: auto;
@@ -39,7 +43,7 @@ nav#main-nav ul li {
 nav#main-nav ul li a {
     text-decoration: none;
     font-family: alk_sanetregular;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 
 nav#main-nav a {
@@ -114,40 +118,87 @@ nav#main-nav a {
     top: 0;
 }
 
-/*CANVAS*/
-#starfield {
-    background-color: #000000;
-    z-index: -1
-}
-
-#adsense {
-    position: absolute;
-    background-color: transparent;
-    display: none;
-    z-index: -1
-}
 
 /*HOME*/
 
-.home-blur {
-    background: url('img/homeBg.jpg') center no-repeat fixed;
-
-    position: relative;
-    opacity: 0.7;
-    margin-top: 50px;
-    width: 100%;
-    height: 100%;
-    z-index: 3;
-}
 
 .home-no-blur {
-    background: url('img/homeBg.jpg') center no-repeat fixed;
-    opacity: 0.7;
+    background: url('img/homeBg.png') center no-repeat fixed;
     margin-top: 50px;
     width: 100%;
     height: 100%;
-    z-index: 3;
+    z-index: -1;
 }
+.cover-bg {
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+}
+/*ABOUT-US*/
+.rectangle {
+    background-color: #1f817e;
+    /*width: 300px;*/
+    height: 100px;
+    position: relative;
+    float: inherit;
+}
+.rectangle > h2 {
+    position: relative;
+    text-align: center;
+    /*right: -120px;*/
+    top: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.about-us-bg {
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    opacity: 0.8;
+}
+
+.faq-content {
+    width: 1000px;
+    margin: auto;
+    opacity: 0.8;
+
+}
+
+article {
+    margin: 0 auto;
+    font-size: 1.6em;
+    line-height: 1.3em;
+    color: #398180;
+    text-align: justify;
+}
+
+article h3 {
+    font-size: 1.17em;
+    color: #000000;
+    text-align: right;
+    font-family: 'ALK Sanet', 'BPG Banner Caps', Roboto, sans-serif;
+}
+
+article p {
+    font-size: 0.9em;
+    font-weight: 200;
+    margin: 0 0 3em;
+    color: #06B7FA;
+    /*text-align: left;*/
+    font-family: 'ALK Sanet', 'BPG Banner Caps', Roboto, sans-serif;
+}
+article a
+{
+    text-decoration: none;
+}
+
+.faq-content {
+    padding-top: 12em;
+    height: 100%;
+}
+
 /*SPEAKERS*/
 .speakers-bg {
     background-color: #ffffff;
@@ -158,11 +209,13 @@ nav#main-nav a {
     max-width: 100%;
     margin: 0 auto;
     text-align: center;
+    padding-top:100px ;
+    padding-bottom:300px ;
 }
 
 .speaker {
     display: inline-block;
-    padding: 80px 50px 50px 0px;
+    padding-right: 80px;
     text-align: center;
     /*float: left;*/
     overflow: hidden;
@@ -217,65 +270,6 @@ nav#main-nav a {
     border-top: 40px red solid;
 }
 
-/*ABOUT-US*/
-.about-us-bg {
-    background-color: #4e4e4e;
-    width: 100%;
-    height: auto;
-    opacity: 0.8;
-}
-
-.faq-content {
-    width: 1000px;
-    margin: auto;
-    opacity: 0.8;
-
-}
-
-.rectangle {
-    background-image: url("img/triangle.png");
-    width: 300px;
-    height: 300px;
-    position: relative;
-    float: right;
-}
-
-.rectangle > h2 {
-    position: relative;
-    right: -140px;
-    top: 60px;
-    color: white;
-    font-weight: 500;
-}
-
-article {
-    margin: 0 auto;
-    font-size: 1.6em;
-    line-height: 1.3em;
-    color: #4d4d4d;
-    text-align: justify;
-}
-
-article h3 {
-    font-size: 1.17em;
-    color: #000000;
-    text-align: right;
-}
-
-article p {
-    font-weight: 200;
-    margin: 0 0 3em;
-    color: #06B7FA;
-    text-align: center;
-    font-family: bpg_ingiri_arial_2012regular;
-
-}
-
-.faq-content {
-    padding-top: 12em;
-    height: 100%;
-}
-
 /*SPONSORS*/
 .sponsors-bg {
     background-color: #ffffff;
@@ -283,7 +277,13 @@ article p {
     width: 100%;
     height: 100%;
 }
-
+.sponsors
+{
+    max-width: 1000px;
+    margin: auto;
+    /*text-align: center;*/
+    padding-top:50px ;
+}
 .title {
     padding: 60px 0px 0px 0px;
 }
@@ -292,20 +292,55 @@ article p {
     margin: 0;
     text-align: center;
 }
+#kilo-sponsors,#mega-sponsors,#giga-sponsors,#tera-sponsors
+{
+    display: inline-block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    text-align: center;
+}
+#kilo-sponsors>#microsoft>img
+{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+#kilo-sponsors>#microsoft1>img
+{
+    position: relative;
+    width: 350px;
+    height: auto;
+}
+#tera-sponsors>#tsu>img
+{
+    position: relative;
+    width: 250px;
+    height: auto;
+}
+
+.media-partners
+{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.ideahub>a>img
+{
+    position: relative;
+    height: 250px;
+    width: auto;
+}
+/*SPONSORS END*/
+#time-line {
+    padding-bottom: 100px;
+}
 
 /*FOOTER*/
 footer {
     color: black;
 }
 
-.cover-bg {
-    -webkit-background-size: 100%;
-    -moz-background-size: 100%;
-    -o-background-size: 100%;
-    background-size: 100%;
-}
-
-#time-line {
-    padding-bottom: 100px;
-}
 
