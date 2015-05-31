@@ -207,14 +207,14 @@ article a
     margin: 0 auto;
     text-align: center;
     padding-top:100px ;
-    padding-bottom:300px ;
+    padding-bottom:200px ;
 }
 
 .speaker {
     display: inline-block;
     padding-right: 80px;
+    margin-top: 50px;
     text-align: center;
-    /*float: left;*/
     overflow: hidden;
     position: relative;
 }
@@ -246,10 +246,12 @@ article a
 
 .speaker-info > h3 {
     color: white;
+    font-family: alk_sanetregular;
     padding-top: 15%;
 }
 
-.speaker-info > h4 {
+.speaker-info > h4,h2,p{
+    font-family: alk_sanetregular;
     color: white;
 }
 
