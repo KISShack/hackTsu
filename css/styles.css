@@ -305,16 +305,10 @@ article a
     width: 350px;
     height: auto;
 }
-#kilo-sponsors>#microsoft1>img
-{
-    position: relative;
-    width: 350px;
-    height: auto;
-}
 #tera-sponsors>#tsu>img
 {
     position: relative;
-    width: 250px;
+    width: 200px;
     height: auto;
 }
 
@@ -328,7 +322,19 @@ article a
 .ideahub>a>img
 {
     position: relative;
-    height: 250px;
+    height: 200px;
+    width: auto;
+}
+#inglove>img
+{
+    position: relative;
+    height: 200px;
+    width: auto;
+}
+#unihack>img
+{
+    position: relative;
+    height: 80px;
     width: auto;
 }
 /*SPONSORS END*/
