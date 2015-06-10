@@ -1,130 +1,107 @@
+body {
+    background-color: rgb(244, 247, 254);
+    font-family: alk_sanetregular;
+}
+
 section {
     padding-top: 50px;
     padding-bottom: 50px;
 }
 
-table.calendar {
-    margin-bottom: 0px;
+.calendar {
     text-align: center;
 }
 
-table.calendar > thead > tr > th {
+.thead {
+    border: 3px solid #A2DED0;
+}
+
+.tr {
+    border: 3px solid #A2DED0;
+
+}
+
+.th {
     text-align: center;
+    border: 3px solid #A2DED0;
+
+}
+.table-bordered {
+    border: 3px solid #A2DED0;
+}
+
+table.calendar > tbody {
+    border: 3px solid #A2DED0;
+}
+
+table.calendar > tbody > tr {
+    border: 3px solid #A2DED0;
 }
 
 table.calendar > tbody > tr > td {
-    height: 40px;
+    height: 60px;
+    border: 3px solid #A2DED0;
+    vertical-align: middle;
 }
 
 table.calendar > tbody > tr > td > div {
-/ / padding : 8 px;
-    height: 40px;
     overflow: hidden;
     display: inline-block;
-    vertical-align: middle;
     float: left;
 }
 
 table.calendar > tbody > tr > td.has-events {
-    color: white;
+    color: #000000;
     cursor: pointer;
     padding: 0;
     border-radius: 4px;
+    vertical-align: middle;
 }
 
 table.calendar > tbody > tr > td.has-events > div {
-    width: 99%;
-    height: 100%;
-    border-left: 1px solid white;
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
-
-table.calendar > tbody > tr > td.snack-time {
-    color: white;
-    cursor: pointer;
-    padding: 0;
-    border-radius: 4px;
-}
-
-table.calendar > tbody > tr > td.snack-time > div {
-    width: 99%;
-    height: 100%;
-    border-right: 3px solid #222222;
-    border-bottom: 1px solid white;
-}
-
-table.calendar > tbody > tr > td.snack-time > div > img {
-    width: 350px;
-    height: 80px;
-    border-bottom: 1px solid white;
-}
-
-table.calendar > tbody > tr > td.has-events > div:first-child {
-    border-left: 0;
-    margin-left: 1px;
-}
-
-table.calendar > tbody > tr > td.has-events > div.practice {
-    opacity: 0.7;
-}
-
-table.calendar > tbody > tr > td.conflicts > div > span.title {
-/ / color : red;
-}
-
-table.calendar > tbody > tr > td.max-conflicts > div {
-    background-color: red;
-    color: white;
-}
-
 table.calendar > tbody > tr > td.has-events > div > span {
-    display: block;
-    text-align: center;
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1.4em;
 }
-
-table.calendar > tbody > tr > td.has-events > div > span a {
-    color: white;
-}
-
-table.calendar > tbody > tr > td.has-events > div > span.title {
-    font-weight: bold;
-}
-
-table.table-borderless > thead > tr > th, table.table-borderless > tbody > tr > td {
-    border: 0;
-}
-
-.table tbody tr.hover td, .table tbody tr.hover th {
-    background-color: whiteSmoke;
-}
-
 .registration {
-    width: 99%;
-    height: 100%;
-    background-color: #398439;
-    border-right: 2px solid #1d9b6c;
+    background-color: #F62459;
 }
-
+.open-ceremony {
+    background-color: #19b5fe;
+}
+.start-hackathon
+{
+    background-color: #3FC380;
+}
+.end-ceremony {
+    background-color: rgba(26, 253, 35, 0.6);
+}
+.eating-breakfast {
+    background-color: rgba(253, 227, 167, 0.25);
+}
+.eating-lunch {
+    /*background-color: rgba(253, 227, 167, 0.52);*/
+    background-color: #FDE3A7;
+}
+.eating-dinner {
+    background-color: #f29f3f;
+}
 .preparing {
-    width: 99%;
-    height: 100%;
-    background-color: #286090;
-    border-right: 2px solid #31b0d5;
+    background-color: #FAFCB3;
 }
-
 .agenda-speaker {
-    width: 99%;
-    height: 100%;
-    background-color: #ac2925;
-    border-right: 2px solid #c0a16b;
+    background-color: rgba(169, 203, 213, 1);
 }
-
 .hacking {
-    width: 99%;
-    height: 100%;
-    background-color: #42dca3;
-    border-right: 2px solid #1d9b6c;
-}
+    background-color: rgb(244, 247, 254);
 
+    /*background-color: rgba(66, 220, 163, 0.42);*/
+}
 .addborder {
     border-right: 5px solid #333333;
     border-bottom: 5px solid #333333;

@@ -1,171 +1,230 @@
 <!DOCTYPE html>
 <html>
 <head lang="en">
-    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <meta charset="UTF-8">
     <title>Agenda</title>
     <meta name="viewport" content="width=device-width, inititial-scale=1.0">
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/agenda.css" rel="stylesheet" type="text/css"/>
-    <link href="css/agenda.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/styles.css"/>
 </head>
 <body>
-     <!-- firs day -->
-    <section class="firstDay">
-        <div class="container">
-                   <table class="calendar table table-bordered">
-                       <thead>
-                       <tr>
-                           <th>&nbsp;</th>
-                           <th width="31%"><h3><strong>12 ივნისი</strong></h3></th>
-                           <th width="31%"><h3><strong>23 მაისი</strong></h3></th>
-                           <th width="31%"><h3><strong>24 მაისი</strong></h3></th>
-                       </tr>
-                       </thead>
-                       <tbody>
-                       <tr id="1">
-                           <td class="08:00">08:00</td>
-                           <td class="has-events" rowspan="8" id="1_1">
-                               <div class="preparing">
-                                   <span class="title">preapration</span>
-                               </div>
-                           </td>
-                           <td class="has-events" rowspan="1" id="1_2">
-                               <div class="hacking">
-                                   <span class="title">hacking</span>
-                               </div>
-                           </td>
-                           <td class="no-events" rowspan="1" id="1_3"></td>
-                       </tr>
+<!-- firs day -->
+<section class="firstDay">
+    <div class="container">
+        <table class="calendar table table-bordered">
+            <thead class="thead">
+            <tr class="tr">
+                <th class="th">&nbsp;</th>
+                <th class="th" width="31%"><h3><strong>12 ივნისი</strong></h3></th>
+                <th class="th" width="31%"><h3><strong>13 ივნისი</strong></h3></th>
+                <th class="th" width="31%"><h3><strong>14 ივნისი</strong></h3></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr id="1">
+                <td>08:00</td>
+                <td class=" has-events preparing" rowspan="10">
+                    <div>
+                        <span>მზადება ჰაკათონისთვის</span>
+                    </div>
+                </td>
+                <!-- დღე 1-->
+                <td class=" has-events hacking" rowspan="2">
+                    <div>
+                        <span>...ჰაკათონი</span>
+                    </div>
+                </td>
+                <!-- დღე 2-->
+                <td class=" has-events hacking" rowspan="2">
+                    <div>
+                        <span>...ჰაკათონი</span>
+                    </div>
+                </td>
 
-                       <tr id="2">
-                           <td>09:00</td>
-                           <td class=" snack-time" rowspan="2" id="2_2">
-                               <div>
-                                   <img src="css/img/Party-Food.jpg">
-                               </div>
-                           </td>
-                           <td class=" no-events" rowspan="1" id="2_3"></td>
-                       </tr>
+            </tr>
 
-                       <tr id="3">
-                           <td>10:00</td>
-                           <td class=" no-events" rowspan="1" id="3_3"></td>
-                       </tr>
+            <tr id="2">
+                <td>09:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+            </tr>
 
-                       <tr id="4">
-                           <td>11:00</td>
-                           <td class=" has-events" rowspan="5" id="3_2">
-                               <div class="hacking">
-                                   <span class="title">hacking</span>
-                               </div>
-                           </td>
-                           <td class=" no-events" rowspan="1" id="4_3"></td>
-                       </tr>
+            <tr id="3">
+                <td>10:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events eating-breakfast" rowspan="1">
+                    <div><span>საუზმე</span></div>
+                </td>
+                <td class=" has-events eating-breakfast" rowspan="1">
+                    <div><span></span>საუზმე</span></div>
+                </td>
+            </tr>
 
-                       <tr id="5">
-                           <td>12:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="4">
+                <td>11:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events agenda-speaker" rowspan="4">
+                    <div>
+                        <span>სპიკერები, დროები რო შეთანხმდება ვინ რომელზე გამოვა მერე ჩავამატებ</span>
+                    </div>
+                </td>
+                <td class=" has-events hacking" rowspan="1">
+                    <div><span>ჰაკათონი</span></div>
+                </td>
+            </tr>
 
-                       <tr id="6">
-                           <td>13:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="5">
+                <td>12:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events end-ceremony" rowspan="3">
+                    <div><span>ჟიურისთვის მომზადება</span></div>
+                </td>
+            </tr>
 
-                       <tr id="7">
-                           <td>14:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="6">
+                <td>13:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+            </tr>
 
-                       <tr id="8">
-                           <td>15:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="7">
+                <td>14:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+            </tr>
 
-                       <tr id="9">
-                           <td>16:00</td>
-                           <td class=" has-events" rowspan="3">
-                               <div class="registration">
-                                   <span class="title">Registration</span>
-                                   <p>16:00-18:00</p>
-                               </div>
-                           </td>
-                           <td class="has-events" rowspan="1">
-                               <div class="agenda-speaker">
-                                   <span class="title">Speech 1</span>
-                               </div>
-                           </td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="8">
+                <td>15:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events eating-lunch" rowspan="1">
+                    <div><span>სადილი+redbull</span></div>
+                </td>
+                <td class=" has-events eating-lunch" rowspan="1">
+                    <div><span>სადილი+redbull</span></div>
+                </td>
+            </tr>
 
-                       <tr id="10">
-                           <td>17:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="9">
+                <td>16:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events agenda-speaker" rowspan="3">
+                    <div>
+                        <span>სპიკერები, დროები რო შეთანხმდება ვინ რომელზე გამოვა მერე ჩავამატებ</span>
+                    </div>
+                </td>
+                <td class=" has-events end-ceremony" rowspan="2">
+                    <div><span>ჟიურისთან პროექტების წარდგენა</span></div>
+                </td>
+            </tr>
 
-                       <tr id="11">
-                           <td>18:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="10">
+                <td>17:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+            </tr>
 
-                       <tr id="12">
-                           <td>19:00</td>
-                           <td class=" has-events" rowspan="2">
-                               <div class="hacking">
-                                   <span class="title">hacking</span>
-                               </div>
-                           </td>
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
+            <tr id="11">
+                <td>18:00</td>
+                <td class="has-events registration" rowspan="1">
+                    <div>
+                        <span>რეგისტრაცია</span>
+                    </div>
+                </td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events end-ceremony" rowspan="2">
+                    <div>
+                        <span>ჟიურის სხდომა</span>
+                    </div>
+                </td>
+            </tr>
 
-                       </tr>
+            <tr id="12">
+                <td>19:00</td>
+                <td class=" has-events open-ceremony" rowspan="1">
+                    <div>
+                        <span>გახსნის ცერემონია</span>
+                    </div>
+                </td>
+                <td class=" has-events hacking" rowspan="2">
+                    <div>
+                        <span>ჰაკათონი</span>
+                    </div>
+                </td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+            </tr>
+            <tr id="13">
+                <td>20:00</td>
+                <td class=" has-events start-hackathon" rowspan="2">
+                    <div>
+                        <span>ჰაკათონის დაწყება, მოწესრიგება მოთავსება.</span>
+                    </div>
+                </td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events end-ceremony" rowspan="1">
+                    <div>
+                        <span>საუკეთესო 10-ულის პრეზენტაციები</span>
+                    </div>
+                </td>
+            </tr>
 
-                       <tr id="13">
-                           <td>20:00</td>
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
+            <tr id="14">
+                <td>21:00</td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <td class=" has-events eating-dinner" rowspan="1">
+                    <div>
+                        <span>ვახშამი</span>
+                    </div>
+                </td>
+                <td class=" has-events end-ceremony" rowspan="1">
+                    <div>
+                        <span>სპონსორების ფავორი გუნდების დასახელება საუკეთესო 3- ეულის დასახელება </span>
+                    </div>
+                </td>
 
-                       <tr id="14">
-                           <td>21:00</td>
-                           <td class=" snack-time" rowspan="2">
-                               <div>
-                                   <title>snack time</title>
-                                   <img src="css/img/Party-Food.jpg">
-                               </div>
-                           </td>
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
+            </tr>
+            <tr id="15">
+                <td>22:00</td>
+                <td class=" has-events eating-dinner" rowspan="1">
+                    <div>
+                        <span>ვახშამი</span>
+                    </div>
+                </td>
+                <td class=" has-events hacking" rowspan="2">
+                    <div>
+                        <span>ჰაკათონი</span>
+                    </div>
+                </td>
+                <td class=" has-events end-ceremony" rowspan="2">
+                    <div>
+                        <span>დაჟილდოვების და დახურვის ცერემონიალი </span>
+                    </div>
+                </td>
 
-                       </tr>
-                       <tr id="15">
-                           <td>22:00</td>
-
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
-
-                       </tr>
-                       <tr id="16">
-                           <td>23:00</td>
-                           <td class="has-events" rowspan="1">
-                               <div class="hacking">
-                                   <span class="title">hacking</span>
-                               </div>
-                           </td>
-                           <td class=" no-events" rowspan="1"></td>
-                           <td class=" no-events" rowspan="1"></td>
-                       </tr>
-                       </tbody>
-                   </table>
-        </div>
-    </section>
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/jquery.easing.min.js"></script>
-    <script src="js/hackTsu.js"></script>
-    <script src="js/agenda.js"></script>
+            </tr>
+            <tr id="16">
+                <td>23:00</td>
+                <td class=" has-events hacking" rowspan="1">
+                    <div>
+                        <span>ჰაკათონი...</span>
+                    </div>
+                </td>
+                <!--<td class=" no-events" rowspan="1"></td>-->
+                <!--<td class=" no-events" rowspan="1"></td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.easing.min.js"></script>
+<script src="js/hackTsu.js"></script>
+<script src="js/agenda.js"></script>
 </body>
 </html>

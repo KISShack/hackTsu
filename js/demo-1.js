@@ -22,15 +22,14 @@
 
         // create points
         points = [];
-        for(var x = 0; x < width; x = x + width/30) {
-            for(var y = 0; y < height; y = y + height/30) {
-                var px = x + Math.random()*width/20;
-                var py = y + Math.random()*height/20;
+        for(var x = 0; x < width; x = x + width/20) {
+            for(var y = 0; y < height; y = y + height/20) {
+                var px = x + Math.random()*width/10;
+                var py = y + Math.random()*height/10;
                 var p = {x: px, originX: px, y: py, originY: py };
                 points.push(p);
             }
         }
-        console.log(points.length);
         // for each point find the 5 closest points
         for(var i = 0; i <points.length; i++) {
             var closest = [];
